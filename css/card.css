@@ -1,0 +1,258 @@
+.card {
+    font-family: 'HarmoniaSansProCyr-Bold', sans-serif;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+}
+
+.list-cards-new-arrivals {
+	display: flex;
+	justify-content: center;
+	margin: 0 -15px;
+}
+
+.card-new-arrivals-item,
+.arrivals-secondary {
+	padding: 0 15px;
+	display: flex;
+	width: 25%;
+}
+
+.arrivals-secondary {
+	width: 33.33%;
+}
+
+.card-new-arrivals-item .card-item {
+	background: #fff;
+    min-height: 422px;
+    padding: 30px 50px;
+}
+
+.card-new-arrivals-item .card-image {
+	display: block;
+	height: 256px;
+	margin: 0 auto -26px;
+} 
+
+.card-title {
+    color: #43525e;
+    font-size: 18px;
+    display: inline-flex;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-title-hover {
+	color: #ff7013;
+	padding-bottom: 30px;
+}
+
+.card-body,
+.card-bottom {
+   display: inline-flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+
+.card-bottom .list-options {
+      display: flex;
+      padding: 30px 0;
+     text-align: center;
+}
+
+.list-colors {
+	display: flex;
+	margin: 0 -4px 30px;
+}
+
+.list-colors ul {
+	display: flex;
+}
+
+.list-colors ul li {
+	padding: 2px;
+}
+
+.list-colors ul li a {
+	width: 13px;
+	height: 13px;
+	border-radius: 5px;
+	background: #e94650;
+	display: block;
+}
+
+.list-colors ul li .dark-blue {
+	background: #43525d;
+}
+
+.list-colors ul li .blue {
+	background: #44c1ff;
+}
+
+.list-colors ul li .green {
+	background: #2fdc7a;
+}
+
+.card-price {
+   font-weight: bold;
+}
+
+.card-product-hover {
+	display: none;
+}
+
+.card-product-hover {
+    -webkit-box-shadow: -6px 1px 60px -26px rgba(67,81,93,1);
+    -moz-box-shadow: -6px 1px 60px -26px rgba(67,81,93,1);
+     box-shadow: -6px 1px 60px -26px rgba(67,81,93,1);
+     text-align: center;
+}
+
+.card-product-hover .card-body {
+	border-bottom: 1px solid #ccc;
+}
+
+.list-sizes {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.list-sizes .size {
+	padding-right: 5px;
+}
+
+.list-sizes ul {
+	display: flex;
+}
+
+
+.list-options li {
+	padding-right: 5px;
+}
+
+.list-options li a {
+	width: 23px;
+	height: 21px;
+	display: block;
+	background: url("../images/sprites.png") no-repeat 0 -38px;
+}
+
+.list-options li .basket2 {
+	background-position: -47px -34px;
+}
+
+
+.list-options li .liked {
+	background-position: -102px -38px;
+}
+
+/*hover*/
+.arrivals-item-first:hover .first-card {
+	display: none;
+}
+
+.arrivals-item-first:hover .first-card-hover {
+	display: block;
+}
+
+.arrivals-item-second:hover .second-card {
+	display: none;
+}
+
+.arrivals-item-second:hover .second-card-hover {
+	display: block;
+}
+
+.arrivals-item-third:hover .third-card {
+	display: none;
+}
+
+.arrivals-item-third:hover .third-card-hover {
+	display: block;
+}
+
+.arrivals-item-fourth:hover .fourth-card{
+	display: none;
+}
+
+.arrivals-item-fourth:hover .fourth-card-hover {
+	display: block;
+}
+
+.card-bottom {
+	display: flex;
+}
+
+/*second slider*/
+
+.second-slider .slick-prev:before,
+.second-slider .slick-next:before {
+    content: "";
+}
+.second-slider .slick-dots {  
+     background: #fff none repeat scroll 0 0;
+     margin: -103px 0 -107px 0;
+     padding: 17px 0;
+}
+
+.second-slider .slick-dots li button::before {
+	  color: orange;
+	  font-size: 10px;
+}
+
+.second-slider .slick-dots li.slick-active button::before {
+    color: orange;
+}
+
+.light-blue {
+   background: #f6f8f9;
+}
+/*arrivals-secondary*/
+.arrivals-secondary .arrivals-secondary {
+	width: 33.33%;
+}
+
+.arrivals-secondary .card-body,
+.arrivals-secondary .card-bottom {
+     flex-wrap: nowrap;
+}
+
+.arrivals-secondary .secondary-item {
+    display: flex;
+    min-height: auto;
+    padding: 36px 26px;
+}
+
+.mb-zero {
+	margin-bottom: 0;
+}
+
+@media (max-width: 1168px) {
+	.card-new-arrivals-item {
+	     width: 50%;
+   }
+ }
+
+
+/*
+
+.card-icon {}
+.card-title {}
+.card-content {}
+.card-description {}
+
+.card-header {}
+.card-body {}
+.card-footer {}
+.card-hover {}
+
+.card-top {}
+.card-right {}
+.card-left {}
+.card-bottom {}
+
+.card:hover .card-hover {}

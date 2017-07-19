@@ -1,0 +1,155 @@
+.header {
+   display: flex;
+}
+
+.header-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 0;
+      border-bottom: 1px solid #f0f2f4;
+      align-items: center;
+}
+
+.header-bottom {
+	display: flex;
+	padding: 40px 0;
+	align-items: center;
+	justify-content: space-between;
+} 
+
+.header-left {
+	display: flex;
+	-ms-align-items: center;
+	align-items:  center;
+}
+
+ .list-contacts,
+ .list-social {
+	display: flex;
+}
+
+.list-social {
+	margin: 0 -10px;
+}
+
+ .list-contacts li {
+ 	padding-left: 27px;
+ 	padding-right: 20px;
+ }
+
+ .list-contacts li a {
+ 	position: relative;
+ 	font-size: 12px;
+ 	color: #43525d;
+ }
+
+ .list-contacts a:before {
+ 	position: absolute;
+ 	display: block;
+ 	content: "";
+ 	background: url('../images/sprites.png') no-repeat 0 0;
+	width: 18px;
+	height: 12px;
+	top: 20%;
+	left: -32%;
+ }
+
+  .list-contacts .call:before {
+  	background-position: -135px 0;
+ }
+
+ .list-social li {
+   	padding: 0 10px;
+  }
+
+  .list-social li a {
+  	display: block;
+ 	content: "";
+ 	background: url('../images/sprites.png') no-repeat -1073px -1px;
+	width: 14px;
+	height: 12px;
+	top: 20%;
+	left: -22%;
+  }
+
+   .list-social li .tw {
+   	  background-position: -1100px -1px;
+   }
+     .list-social li .google {
+   	  background-position:  -1130px -1px;
+   }
+
+   .list-social li .insta {
+   	  background-position: -1159px -1px;
+   }
+   
+.navbar .logo {
+	padding-right: 70px;
+}
+
+.navbar-collapse {
+	display: inline-flex;
+	margin: 0 -11px;
+	font-size: 16px;
+}
+
+.navbar-collapse .active {
+	color: #ff7013;
+}
+
+.navbar-collapse li {
+	padding: 0 22px;
+}
+
+.navbar-collapse li a {
+	color: #43525d;
+}
+
+.users-list {
+   display: inline-flex;
+   margin: 0 -16px;
+}
+
+.users-list li {
+	padding: 0 16px;
+}
+
+.users-list li a {
+    display: block;
+ 	content: "";
+ 	background: url('../images/sprites.png') no-repeat -1045px -93px;
+	width: 24px;
+	height: 20px;
+	top: 20%;
+	left: -22%;
+  }
+  .users-list li .you {
+  	background-position: -1097px -92px; 
+  }
+  .users-list li .basket {
+  	background-position: -1146px -74px; 
+  }
+
+@media (max-width: 793px) {
+     .navbar-toggler {
+     	display: block;
+     }  
+
+     .navbar-collapse {
+            display: none;
+         }
+      .navbar-collapse li {
+      	display: block;
+      } 
+
+}
+     
+
+/*.navbar {}
+.navbar-logo {}
+.navbar-logo-image {}
+.navbar-nav {}
+.navbar-nav > li {}
+.navbar-nav > li > a {}
+.navbar-toggler {}
+.navbar-collapse {}
