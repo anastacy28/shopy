@@ -1,3 +1,7 @@
+a {
+	font-size: 14px;
+	color: red;
+}
 .card {
     font-family: 'HarmoniaSansProCyr-Bold', sans-serif;
 }
@@ -13,34 +17,28 @@
 	margin: 0 -15px;
 }
 
-.card-new-arrivals-item,
-.arrivals-secondary {
+.card-new-arrivals-item {
 	padding: 0 15px;
 	display: flex;
 	width: 25%;
 }
 
-.arrivals-secondary {
-	width: 33.33%;
-}
-
-.card-new-arrivals-item .card-item {
+.card-item {
 	background: #fff;
-    min-height: 422px;
+    height: 368px;
     padding: 30px 50px;
+    text-align: center;
 }
 
-.card-new-arrivals-item .card-image {
-	display: block;
-	height: 256px;
-	margin: 0 auto -26px;
-} 
+.card-new-arrivals-item .card-image img {
+    height: 100%;
+    width: auto;
+}
 
 .card-title {
     color: #43525e;
     font-size: 18px;
-    display: inline-flex;
-    font-weight: bold;
+    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -49,12 +47,21 @@
 	padding-bottom: 30px;
 }
 
-.card-body,
-.card-bottom {
-   display: inline-flex;
+.card-header {
+   display: flex;
    justify-content: center;
-   flex-wrap: wrap;
-   align-items: flex-end;
+}
+
+.card-body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-bottom {
+	display: flex;
+	justify-content: center;
 }
 
 .card-bottom .list-options {
@@ -119,6 +126,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .list-sizes .size {
@@ -187,6 +195,66 @@
 	display: flex;
 }
 
+/*card-secondary */
+.list-card-secondary {
+   display: flex;
+}
+
+.list-stars ul li {
+	display: inline-flex;
+}
+
+.card-secondary {
+    padding: 0 15px;
+    width: 33.33%;
+}
+  
+.card-item-secondary {
+    align-items: center;
+    background: #fff none repeat scroll 0 0;
+    display: flex;
+    height: 166px;
+    justify-content: space-between;
+    padding: 32px 25px;
+ }
+
+.card-secondary .card-right {
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 9%;
+    width: 100%;
+}
+
+ .card-secondary .card-body {
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	align-items: center;
+ }
+
+ .card-secondary .card-image {
+ 	 padding-right: 30px; 
+     border-right: 1px solid #f7f7f8;
+ }
+
+/*card-secondary-hover */ 
+
+/*secondary hover*/
+   .secondary-first-hover {
+   	  display: none;
+   }
+
+ .card-secondary-first:hover .secondary-first {
+ 	display: none;
+
+ }
+
+  .card-secondary-first:hover .secondary-first-hover {
+  	 display: block;
+  }
+
+
+
 /*second slider*/
 
 .second-slider .slick-prev:before,
@@ -211,24 +279,10 @@
 .light-blue {
    background: #f6f8f9;
 }
-/*arrivals-secondary*/
-.arrivals-secondary .arrivals-secondary {
-	width: 33.33%;
-}
-
-.arrivals-secondary .card-body,
-.arrivals-secondary .card-bottom {
-     flex-wrap: nowrap;
-}
 
 .arrivals-secondary .secondary-item {
-    display: flex;
-    min-height: auto;
-    padding: 36px 26px;
-}
-
-.mb-zero {
-	margin-bottom: 0;
+     height: auto;
+     display: flex;
 }
 
 @media (max-width: 1168px) {

@@ -9,6 +9,18 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'HarmoniaSansProCyr-Italic';
+  src: url('../fonts/HarmoniaSansProCyr-Italic.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/HarmoniaSansProCyr-Italic.otf')  format('opentype'),
+       url('../fonts/HarmoniaSansProCyr-Italic.woff') format('woff'), 
+       url('../fonts/HarmoniaSansProCyr-Italic.ttf')  format('truetype'),
+       url('../fonts/HarmoniaSansProCyr-Italic.svg#HarmoniaSansProCyr-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @font-face {
   font-family: 'HarmoniaSansProCyr-Regular';
   src: url('../fonts/HarmoniaSansProCyr-Regular.eot?#iefix') format('embedded-opentype'), 
@@ -140,4 +152,3 @@ a {
 .row {
   margin: 0 -15px;
 }
-

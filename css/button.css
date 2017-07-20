@@ -2,6 +2,23 @@
 	display: inline-flex;
 }
 
-.button:hover {}
+.button {
+	max-width: 102px;
+	padding: 18px 30px;
+	background: #ff7013;
+}
+
+.button a {
+	color: #fff;
+}
+
+.button:hover {
+   background: #fff;
+}
+
+.button:hover a {
+	color: #ff7013;
+}
+/*
 .button:focus {}
 .button.is-active {}

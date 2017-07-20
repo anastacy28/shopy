@@ -1,4 +1,4 @@
- .featured {
+.featured {
    -webkit-background-size: 100% ;
     background-size: 100%;
     background-size: cover;
@@ -70,6 +70,7 @@
 	font-weight: bold;
 }
 
+/*slick*/
 .section-slick-header {
      padding-bottom: 1%;
 }
@@ -81,7 +82,20 @@
 .section-slick-footer {
 	display: flex;
 }
+/*
+.slick .slick-dots {
+    bottom: 43%;
+    left: 11%;
+}
 
+.slick .slick-dots li {
+    padding: 15px;
+}
+
+.slick .slick-dots li {
+    display: block;
+}
+*/
 .section-slick-product-shot-description,
 .section-slick-price,
 .section-slick-order {
@@ -123,9 +137,23 @@
     background: #f6f8f9;
 }
 
+
+.slick .slick-dotted .slick-slider {
+    margin-bottom: 0;
+}
+
 /*section two-columns */
+.column-section {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .section-two-columns {
 	display: flex;
+	align-items: center;
+}
+
+.column-holder {
+	padding: 0 15px;
 }
 
 .section-two-columns .column {
@@ -133,9 +161,17 @@
 	 display: flex;
 	 justify-content: center;
 	 align-items: center;
-	 padding-bottom: 10px;
-	 padding-top: 10px;
+	 padding-bottom: 1%;
+	 padding-top: 1%;
 	 border: 1px solid #edf0f1;
+}
+
+.col-first {
+   width: 60%;
+}
+
+.col-second {
+	width: 40%;
 }
 
 .section-two-columns .img-holder {
@@ -153,10 +189,16 @@
 
 .column-title {
 	font-size: 22px;
+	padding-right: 30px;
+	text-transform: uppercase;
+	color: #ff7013;
+	font-weight: bold;
 }
 
 .column-description {
 	font-size: 12px;
+	font-family: "HarmoniaSansProCyr-Italic", sans-serif;
+	font-weight: bold;
 }
 
 .price-holder {
@@ -164,6 +206,40 @@
 	font-family: 'HarmoniaSansProCyr-Black', sans-serif;
 }
 
+/*section-two-columns-second*/
+.section-two-columns-second {
+	display: flex;
+	justify-content: space-between;
+	background: #fff;
+	align-items: center;
+	padding: 55px 50px;
+}
+
+.section-two-columns-second .column {
+	display: flex;
+	align-items: center;
+    display: inline-flex;
+}
+
+.send-email {
+   color: #8f99a3;
+   padding: 5px;
+   font-size: 12px;
+   font-family: "HarmoniaSansProCyr-Italic", sans-serif;
+   position: relative;
+}
+
+.send-email:before {
+    background: url("../images/sprites.png") no-repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 12px;
+    left: -32%;
+    position: absolute;
+    top: 20%;
+    width: 18px;
+    z-index: 5;
+}
 
 
 /*.section {}
