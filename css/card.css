@@ -1,9 +1,11 @@
-a {
-	font-size: 14px;
-	color: red;
-}
 .card {
     font-family: 'HarmoniaSansProCyr-Bold', sans-serif;
+}
+
+.card-image {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
 }
 
 .card-image img {
@@ -11,23 +13,30 @@ a {
     width: 100%;
 }
 
-.list-cards-new-arrivals {
-	display: flex;
-	justify-content: center;
-	margin: 0 -15px;
+.card-product-hover .card-body {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 53px;
+    justify-content: center;
 }
 
 .card-new-arrivals-item {
-	padding: 0 15px;
-	display: flex;
-	width: 25%;
+	margin-bottom: 25px;
+    padding: 0 15px;
+    width: 25%;
 }
 
 .card-item {
 	background: #fff;
     height: 368px;
-    padding: 30px 50px;
+    padding: 30px 40px;
     text-align: center;
+    width: 100%;
 }
 
 .card-new-arrivals-item .card-image img {
@@ -39,7 +48,7 @@ a {
     color: #43525e;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 }
 
 .card-title-hover {
@@ -47,32 +56,41 @@ a {
 	padding-bottom: 30px;
 }
 
-.card-header {
-   display: flex;
-   justify-content: center;
-}
-
-.card-body {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: center;
-}
-
 .card-bottom {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-bottom .list-options {
       display: flex;
-      padding: 30px 0;
-     text-align: center;
+      justify-content: center;
+}
+
+.list-options li {
+    padding: 0 15px;
+}
+
+.list-options li a {
+	width: 23px;
+	height: 21px;
+	display: block;
+	background: url("../images/sprites.png") no-repeat 0 -38px;
+}
+
+.list-options li .basket2 {
+	background-position: -47px -34px;
+}
+
+
+.list-options li .liked {
+	background-position: -102px -38px;
 }
 
 .list-colors {
-	display: flex;
-	margin: 0 -4px 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 -4px 30px;
 }
 
 .list-colors ul {
@@ -116,6 +134,7 @@ a {
     -moz-box-shadow: -6px 1px 60px -26px rgba(67,81,93,1);
      box-shadow: -6px 1px 60px -26px rgba(67,81,93,1);
      text-align: center;
+     width: 100%;
 }
 
 .card-product-hover .card-body {
@@ -125,37 +144,18 @@ a {
 .list-sizes {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 30px;
+	margin-bottom: 15%;
 	text-align: center;
+	justify-content: center;
 }
 
 .list-sizes .size {
-	padding-right: 5px;
+	padding-right: 22px;
 }
 
 .list-sizes ul {
 	display: flex;
-}
-
-
-.list-options li {
-	padding-right: 5px;
-}
-
-.list-options li a {
-	width: 23px;
-	height: 21px;
-	display: block;
-	background: url("../images/sprites.png") no-repeat 0 -38px;
-}
-
-.list-options li .basket2 {
-	background-position: -47px -34px;
-}
-
-
-.list-options li .liked {
-	background-position: -102px -38px;
+	margin: 0 -15px;
 }
 
 /*hover*/
@@ -191,22 +191,18 @@ a {
 	display: block;
 }
 
-.card-bottom {
-	display: flex;
-}
-
 /*card-secondary */
 .list-card-secondary {
    display: flex;
-}
-
-.list-stars ul li {
-	display: inline-flex;
+   flex-wrap: wrap;
+   margin-bottom: 10%;
+   justify-content: center;
 }
 
 .card-secondary {
     padding: 0 15px;
     width: 33.33%;
+    margin-bottom: 25px;
 }
   
 .card-item-secondary {
@@ -215,13 +211,15 @@ a {
     display: flex;
     height: 166px;
     justify-content: space-between;
-    padding: 32px 25px;
+    padding: 23px 31px;
  }
 
 .card-secondary .card-right {
     display: flex;
     flex-flow: column wrap;
-    padding-left: 9%;
+    padding-left: 16%;
+    margin-left: 10%;
+    border-left: 1px solid #f7f7f8; 
     width: 100%;
 }
 
@@ -229,12 +227,14 @@ a {
  	display: flex;
  	flex-direction: row;
  	justify-content: space-between;
- 	align-items: center;
  }
 
  .card-secondary .card-image {
- 	 padding-right: 30px; 
-     border-right: 1px solid #f7f7f8;
+     margin-bottom: 0;
+ }
+
+ .card-item-secondary .card-title-secondary {
+ 	margin-bottom:26px;
  }
 
 /*card-secondary-hover */ 
@@ -252,8 +252,6 @@ a {
   .card-secondary-first:hover .secondary-first-hover {
   	 display: block;
   }
-
-
 
 /*second slider*/
 
@@ -285,11 +283,47 @@ a {
      display: flex;
 }
 
-@media (max-width: 1168px) {
+@media (max-width: 1135px) {
+    .container {
+		padding: 0 2%;
+	}
 	.card-new-arrivals-item {
-	     width: 50%;
+	width: 33.33%;
    }
- }
+    .card-secondary {
+   	width: 50%;
+   }
+}
+
+@media (max-width: 768px) {
+	.card-new-arrivals-item {
+	width: 50%;
+   }
+  
+}
+
+@media (max-width: 600px) {
+	.card-list {
+		justify-content: center;
+	}
+	.card-new-arrivals-item {
+	width: 60%;
+   }
+    .card-secondary {
+   	width: 60%;
+   }
+}
+
+@media (max-width: 500px) {
+	.card-new-arrivals-item {
+	   width: 80%;
+   }
+    .card-secondary {
+   	   width: 90%;
+   }
+
+}
+
 
 
 /*

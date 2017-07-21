@@ -1,3 +1,7 @@
+.slick-dotted.slick-slider {
+    margin-bottom: 30px;
+}
+
 .featured {
    -webkit-background-size: 100% ;
     background-size: 100%;
@@ -16,10 +20,6 @@
 	flex-direction: column;
 	text-align: center;
 	margin-bottom: 6%;
-}
-
-.mb-zero {
-	margin-bottom: 0;
 }
 
 .featured .section {
@@ -114,7 +114,7 @@
 
 .section-slick-price {
 	 color: #5b6670;
-	 padding-right: 6%;
+	 padding-right: 53px;
 }
 
 .section-slick-order {
@@ -137,11 +137,6 @@
     background: #f6f8f9;
 }
 
-
-.slick .slick-dotted .slick-slider {
-    margin-bottom: 0;
-}
-
 /*section two-columns */
 .column-section {
 	padding-left: 15px;
@@ -149,11 +144,13 @@
 }
 .section-two-columns {
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .column-holder {
 	padding: 0 15px;
+	margin-bottom: 25px;
 }
 
 .section-two-columns .column {
@@ -164,6 +161,15 @@
 	 padding-bottom: 1%;
 	 padding-top: 1%;
 	 border: 1px solid #edf0f1;
+	 height: 100%;
+}
+
+.adv-holder {
+    margin-bottom: 17px;
+}
+
+.section-two-columns .section-body {
+    text-align: center;
 }
 
 .col-first {
@@ -191,8 +197,13 @@
 	font-size: 22px;
 	padding-right: 30px;
 	text-transform: uppercase;
-	color: #ff7013;
+	color: #44525e;
 	font-weight: bold;
+}
+
+.column-section .column-title {
+	color: #ff7013;
+	font-size: 18px;
 }
 
 .column-description {
@@ -208,11 +219,12 @@
 
 /*section-two-columns-second*/
 .section-two-columns-second {
-	display: flex;
-	justify-content: space-between;
-	background: #fff;
-	align-items: center;
-	padding: 55px 50px;
+    align-items: center;
+    background: #fff none repeat scroll 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 34px 43px;
 }
 
 .section-two-columns-second .column {
@@ -221,12 +233,19 @@
     display: inline-flex;
 }
 
+.form-holder {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 .send-email {
    color: #8f99a3;
    padding: 5px;
    font-size: 12px;
    font-family: "HarmoniaSansProCyr-Italic", sans-serif;
    position: relative;
+   margin-right: 50px;
 }
 
 .send-email:before {
@@ -239,6 +258,124 @@
     top: 20%;
     width: 18px;
     z-index: 5;
+}
+
+.size-holder {
+	color: #c7cacc;
+	font-family: 'HarmoniaSansProCyr-Regular', sans-serif;
+	font-size: 12px;
+}
+
+/*footer-section*/
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'HarmoniaSansProCyr-Regular', sans-serif;
+    color: #35404c;
+    font-size: 14px;
+}
+
+.footer-left {
+   margin-bottom: 17px;
+}
+
+.footer-left .logo {
+   margin-bottom: 17px;
+}
+
+.footer-right {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 67%;
+}
+
+.footer-right ul {
+	list-style-type: disc;
+	padding: 0 15px;
+	margin-bottom: 15px;
+}
+
+.footer-right ul li {
+	margin-bottom: 13px;
+}
+
+.footer-right ul li:hover a {
+	color: #ff884b;
+}
+
+.footer-right ul li:hover {
+	color: #ff884b;
+}
+
+.footer-right .payment-method {
+	padding-top: 8px;
+}
+
+.payment-method span {
+	display: block;
+	margin-bottom: 18px;
+}
+
+.payment-method .cards {
+	display: flex;
+	list-style: none;
+	margin: 0 -15px;
+}
+
+.payment-method .cards li {
+	padding-right: 9px;
+}
+
+.payment-method .cards a {
+	background: url('../images/sprites.png') no-repeat -356px 0;
+	width: 27px;
+	height: 19px;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.payment-method .cards a.br {
+	background-position: -391px 0;
+}
+
+.payment-method .cards a.visa {
+	background-position: -427px 0;
+}
+
+.payment-method .cards a.master {
+	background-position: -463px 0;
+}
+.payment-method .cards a.grey {
+	background-position: -499px 0;
+}
+
+
+@media (max-width: 950px) {
+	.section-two-columns .column-holder {
+	   width: 100%;
+   }
+}
+
+@media (max-width: 600px) {
+   .footer-section {
+       justify-content: center;
+   }
+   .footer-left,
+   .footer-right {
+   	  width: 90%;
+   	  justify-content: space-between;
+   }
+}
+
+@media (max-width: 550px) {
+   .section-two-columns .img-holder {
+    margin-right: 15px;
+}
 }
 
 

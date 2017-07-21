@@ -3,7 +3,7 @@
 }
 
 .button {
-	max-width: 102px;
+	min-width: 107px;
 	padding: 18px 30px;
 	background: #ff7013;
 }
