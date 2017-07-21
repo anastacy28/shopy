@@ -266,94 +266,22 @@
 	font-size: 12px;
 }
 
-/*footer-section*/
+/*section sidebar*/
+.section-products {
+	font-family: 'HarmoniaSansProCyr-Black', sans-serif;
+}
 
-.footer-section {
+.main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    font-family: 'HarmoniaSansProCyr-Regular', sans-serif;
-    color: #35404c;
-    font-size: 14px;
 }
 
-.footer-left {
-   margin-bottom: 17px;
+.item-sidebar {
+	padding: 40px;
+	background: #fff;
+	margin-bottom: 29px;
 }
-
-.footer-left .logo {
-   margin-bottom: 17px;
-}
-
-.footer-right {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 67%;
-}
-
-.footer-right ul {
-	list-style-type: disc;
-	padding: 0 15px;
-	margin-bottom: 15px;
-}
-
-.footer-right ul li {
-	margin-bottom: 13px;
-}
-
-.footer-right ul li:hover a {
-	color: #ff884b;
-}
-
-.footer-right ul li:hover {
-	color: #ff884b;
-}
-
-.footer-right .payment-method {
-	padding-top: 8px;
-}
-
-.payment-method span {
-	display: block;
-	margin-bottom: 18px;
-}
-
-.payment-method .cards {
-	display: flex;
-	list-style: none;
-	margin: 0 -15px;
-}
-
-.payment-method .cards li {
-	padding-right: 9px;
-}
-
-.payment-method .cards a {
-	background: url('../images/sprites.png') no-repeat -356px 0;
-	width: 27px;
-	height: 19px;
-	top: 0;
-	left: 0;
-	display: block;
-}
-
-.payment-method .cards a.br {
-	background-position: -391px 0;
-}
-
-.payment-method .cards a.visa {
-	background-position: -427px 0;
-}
-
-.payment-method .cards a.master {
-	background-position: -463px 0;
-}
-.payment-method .cards a.grey {
-	background-position: -499px 0;
-}
-
 
 @media (max-width: 950px) {
 	.section-two-columns .column-holder {
@@ -361,21 +289,10 @@
    }
 }
 
-@media (max-width: 600px) {
-   .footer-section {
-       justify-content: center;
-   }
-   .footer-left,
-   .footer-right {
-   	  width: 90%;
-   	  justify-content: space-between;
-   }
-}
-
 @media (max-width: 550px) {
    .section-two-columns .img-holder {
     margin-right: 15px;
-}
+  }
 }
 
 
