@@ -10,10 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script src="js/general.js"></script>
+  <link rel="stylesheet" href="jquery.range.css">
+  <script src="jquery.range.js"></script>
+  <script src="js/general.js"></script>
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper product">
 		<header class="header">
 			<div class="container">
                  <div class="header-top">
@@ -67,36 +69,672 @@
                  <div class="main-content">
                     <div class="section-left">
                       <div class="sidebar">
+                         <div class="sidebar-box">
+                            <div class="sidbar-title">
+                                 Categories
+                             </div>
                           <ul class="item-sidebar">
-
-
+                              <li><a href="#">Man</a></li>
+                              <li><a href="#">Women</a></li>
+                              <li><a href="#">Childrens</a></li>
+                              <li><a href="#">Hot Deals</a></li>
                           </ul>
+                          </div>
+                          <div class="sidebar-box">
+                            <div class="sidbar-title">
+                                Price Filtter
+                             </div>
+                             <div class="range-holder">
+                                   <input type="hidden" class="range-slider-input" value="2000" />
+                             </div>
+                          </div>
+                          <div class="sidebar-box">
+                            <div class="sidbar-title">
+                               Sizes
+                             </div>
                           <ul class="item-sidebar">
-
-
+                              <li>
+                                  <input class="checkbox" id="check1" name="sizes-s" value="small" type="checkbox"> 
+                                  <label for="check1"><span>Small</span></label>
+                              </li>
+                              <li>
+                                  <input class="checkbox" id="check2" name="sizes-m" value="midum" type="checkbox"> 
+                                  <label for="check2"><span>Midum</span></label>
+                                </li>
+                              <li>
+                                   <input class="checkbox" id="check3" name="sizes-l" value="large" type="checkbox"> 
+                                   <label for="check3"><span>Large</span></label>
+                               </li>
+                              <li>  
+                                   <input class="checkbox" id="check4" name="sizes-xl" value="xlarge" type="checkbox">
+                                   <label for="check4"><span>X Large</span></label>
+                              </li>
                           </ul>
+                          </div>
+                         <div class="sidebar-box">
+                            <div class="sidbar-title">
+                                 Brands
+                             </div>
                           <ul class="item-sidebar">
-
-
+                              <li>
+                                  <input id="check5" name="brands1" value="reebok" type="checkbox"> 
+                                  <label for="check5"><span>Reebok</span></label>
+                              </li>
+                              <li>
+                                  <input id="check6" name="brands2" value="addidas" type="checkbox"> 
+                                  <label for="check6"><span>Addidas</span></label>
+                                </li>
+                              <li>
+                                   <input id="check7" name="brands3" value="nike" type="checkbox"> 
+                                   <label for="check7"><span>Nike</span></label>
+                               </li>
+                              <li>  
+                                   <input id="check8" name="brands4" value="active" type="checkbox">
+                                   <label for="check8"><span>Active</span></label>
+                              </li>
                           </ul>
-                          <ul class="item-sidebar">
-
-
                           </ul>
-                          <ul class="item-sidebar">
-
-
-                          </ul>
+                          </div>
+                          
                       </div>
                     </div>
                     <div class="section-right">
-                         <div class="card-list">
-
-                         </div>
+                         <ul class="card-list row">
+                         <li class="card-new-arrivals-item arrivals-item-first">
+        <div class="card-item first-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product1.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item first-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
                     </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                    
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+                            </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+    <li class="card-new-arrivals-item arrivals-item-second">
+        <div class="card-item second-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product2.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item second-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                   
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+    <li class="card-new-arrivals-item arrivals-item-second">
+        <div class="card-item second-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product2.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item second-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                   
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+    <li class="card-new-arrivals-item arrivals-item-second">
+        <div class="card-item second-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product2.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item second-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                   
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+    <li class="card-new-arrivals-item arrivals-item-second">
+        <div class="card-item second-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product2.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item second-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                   
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+    <li class="card-new-arrivals-item arrivals-item-second">
+        <div class="card-item second-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product2.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item second-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                   
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+    <li class="card-new-arrivals-item arrivals-item-second">
+        <div class="card-item second-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product2.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item second-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                   
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+     <li class="card-new-arrivals-item arrivals-item-second">
+        <div class="card-item second-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product2.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item second-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                   
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+     <li class="card-new-arrivals-item arrivals-item-third">
+        <div class="card-item third-card">
+          <div class="card-header">
+              <div class="card-image">
+                   <img src="images/product4.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title">Reebok Track Jacket</div>
+                     <div class="card-price orange">100$</div>
+          </div>
+         </div> 
+         <div class="card-product-hover card-item third-card-hover">
+                <div class="card-header">
+              <div class="card-image-hover">
+                   <img src="images/product3.jpg" alt="images">
+              </div>
+          </div>
+          <div class="card-body">
+                    <div class="card-title-hover">Reebok Track Jacket</div>
+                    <div class="list-sizes">
+                        <div class="size">sizes :</div>
+                          <ul>
+                              <li><a href="#">s-</a></li>
+                               <li><a href="#">m-</a></li>
+                                <li><a href="#">l-</a></li>
+                                 <li><a href="#">xl</a></li>
+                          </ul>
+                    </div>
+                    <div class="list-colors">
+                          <ul>
+                             <li>
+                              <a class="red" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="dark-blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="blue" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="green" href="#"></a>
+                             </li>
+                          </ul> 
+                    
+          </div>
+         </div><!--close card-product-hover-->
+          <div class="card-bottom">
+                          <ul class="list-options">
+                             <li>
+                              <a class=" " href="#"></a>
+                             </li>
+                             <li>
+                              <a class="basket2" href="#"></a>
+                             </li>
+                             <li>
+                              <a class="liked" href="#"></a>
+                             </li>
+
+                          </ul>
+                    </div>   
+      </div><!--close card-item-->
+   </li>
+<div class="decor">
+    <a href="#">
+         <img src="images/link-more.png" alt="images">
+    </a>
+</div>
+ 
+                         </ul>
+                    </div>
+
                  </div>  
               </div>
+              <div class="container">         
+<div class="column-section ">        
+   <div class="section-two-columns-second row"> 
+       <div class="column">
+             <div class="column-title">news letter</div>
+             <div class="column-description blue">join us now to get all news and special offers</div>
+       </div>
+       <div class="form-holder">
+             <form class=" orange" action="siteserver.php" name="user-info" method="post">
+                 <input class="send-email" type="email" placeholder="type your email here"/>
+              </form>
+             <div class="button"><a href="#">join us</a></div>
+        </div> 
+   </div>
+   </div>
          </div>
+
+</div>
 		</main>
 		<footer class="footer">
 		  <div class="container">
@@ -155,6 +793,19 @@
        vertical: true,
        pauseOnHover: true
        });
+    </script>
+    <script type="text/javascript">
+      $('.range-slider').jRange({
+    from: 0,
+    to: 1000,
+    step: 100,
+    scale: [0,100,200,300,400,500,600,700,800,900,1000],
+    format: '%s',
+    width: 300,
+    showLabels: true,
+    isRange : true
+});
+
     </script>
 </body>
 </html>

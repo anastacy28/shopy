@@ -31,6 +31,10 @@
     width: 25%;
 }
 
+.product .card-new-arrivals-item {
+	width: 33.33%;
+}
+
 .card-item {
 	background: #fff;
     height: 368px;
@@ -293,11 +297,17 @@
     .card-secondary {
    	width: 50%;
    }
+   .product .card-new-arrivals-item {
+	width: 50%;
+   }
 }
 
 @media (max-width: 768px) {
 	.card-new-arrivals-item {
 	width: 50%;
+   }
+    .product .card-new-arrivals-item {
+	width: 80%;
    }
   
 }
@@ -321,6 +331,10 @@
     .card-secondary {
    	   width: 90%;
    }
+    .product .card-new-arrivals-item {
+	width: 100%;
+   }
+  
 
 }
 

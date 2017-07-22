@@ -266,26 +266,103 @@
 	font-size: 12px;
 }
 
-/*section sidebar*/
-.section-products {
-	font-family: 'HarmoniaSansProCyr-Black', sans-serif;
-}
+/*section-products*/
+ .product .section-left {
+   	   width: 25%;
+   	   padding-right: 30px;
+   }
 
+  .product .section-right {
+   	   width: 75%;
+   }
+
+/*section sidebar*/
 .main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.sidebar {
+    font-family: 'HarmoniaSansProCyr-Black', sans-serif;
+	font-size: 18px;
+}
 
-.item-sidebar {
+.sidebar-box {
 	padding: 40px;
 	background: #fff;
 	margin-bottom: 29px;
 }
 
+.sidbar-title {
+	color: #ff7013;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.item-sidebar li {
+	margin-bottom: 20px;
+}	
+
+.item-sidebar li:hover,
+.item-sidebar li:active,
+.item-sidebar li:focus {
+	color: #ff7013;
+}
+
+/*checkbox*/
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../images/sprites.png") no-repeat  -262px -51px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-position: -262px 0;
+}
+
+.item-sidebar span {
+	display: inline-block;
+	padding-left: 12px;
+}
+
+.range-slider-input {
+    display: block;
+}
+
+.product .card-list {
+	margin-bottom: 0;
+}
+
+.product .column-section {
+	padding-top: 7.5%;
+}     
+
+@media (max-width: 1020px) {
+	.product .section-left {
+	   width: 35%;
+   }
+   	.product .section-right {
+	   width: 65%;
+   }
+}
 @media (max-width: 950px) {
 	.section-two-columns .column-holder {
 	   width: 100%;
+   }
+}
+
+@media (max-width: 760px) {
+	.product .section-left {
+	   width: 45%;
+   }
+   	.product .section-right {
+	   width: 55%;
    }
 }
 
@@ -293,8 +370,25 @@
    .section-two-columns .img-holder {
     margin-right: 15px;
   }
+  .product .section-left {
+	   width: 50%;
+   }
+   	.product .section-right {
+	   width: 50%;
+   }
+   .product .section-left {
+   	padding-right: 3px;
+   }
 }
 
+@media (max-width: 530px) {
+     	.product .section-right {
+	   width: 100%;
+   }
+   	.product .section-left {
+	   width: 100%;
+   }
+}
 
 /*.section {}
 .section-title {}
