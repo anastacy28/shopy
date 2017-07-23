@@ -395,6 +395,7 @@ input[type="checkbox"]:checked + label:before {
 
 .slaider-nav .slick-item {
    cursor: pointer;
+   padding: 0 10px;
 }
 
 .slaider-nav .slick-item .img-holder img {
