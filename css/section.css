@@ -413,6 +413,9 @@ input[type="checkbox"]:checked + label:before {
 	.section-two-columns .column-holder {
 	   width: 100%;
    }
+   .slick .slick-dots {
+   left: 4%;
+ } 
 }
 
 @media (max-width: 760px) {
