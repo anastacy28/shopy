@@ -139,6 +139,7 @@
      box-shadow: -6px 1px 60px -26px rgba(67,81,93,1);
      text-align: center;
      width: 100%;
+      transition: all 0.2s ease 0s;
 }
 
 .card-product-hover .card-body {

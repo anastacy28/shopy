@@ -1,5 +1,33 @@
-.slick-dotted.slick-slider {
-    margin-bottom: 30px;
+.slick .slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+.slick .slick-dots {
+   top: 40%;
+   text-align: left;
+   left: 10%;
+} 
+
+.slick .slick-dots li {
+	display: block;
+	width: 11px;
+	height: 22px;
+	background: #fff;
+	margin: 15px 5px;
+}
+
+.slick .slick-dots li button:before {
+	content: "";
+}
+
+.slick .slick-dots li:active button:before,
+.slick .slick-dots li:hover button:before,
+.slick .slick-dots li:focus button:before,
+.slick .slick-dots li:visited button:before {
+    width: 11px;
+	height: 31px;
+	background: #ff7013;
+
 }
 
 .featured {
@@ -29,18 +57,6 @@
 .section-featured {
     padding-left: 8.5%;
     padding-top: 8%;
-    position: relative;
-}
-
-.section-featured:before {
-	position: absolute;
-	content: "";
-	display: block;
-	background: url("../images/control.png") no-repeat 0 0;
-    top: 53%;
-    left: 0; 
-    width: 10px;
-    height: 88px;
 }
 
 .section-slick-product-title,
@@ -135,6 +151,7 @@
 
 .new-arrivals {
     background: #f6f8f9;
+    margin-top: -3%;
 }
 
 /*section two-columns */
@@ -248,6 +265,11 @@
    margin-right: 50px;
 }
 
+input[type="email"] {
+     border: medium none;
+     font-size: 100%;
+}
+
 .send-email:before {
     background: url("../images/sprites.png") no-repeat scroll 0 0;
     content: "";
@@ -342,6 +364,42 @@ input[type="checkbox"]:checked + label:before {
 .product .column-section {
 	padding-top: 7.5%;
 }     
+
+/*show-product*/
+.show-slider {
+   	   display: flex;
+   }
+
+.show-slider .section-left {
+    width: 40%;
+}
+
+.show-slider .section-right {
+	width: 60%;
+	
+} 
+
+.slick-show {
+	width: 100%;
+	margin-bottom: 63px; 
+}
+
+.slick-show .slick-item .img-holder img {
+    display: block;
+    margin: 0 auto;
+}
+
+.slick-show .slick-item {
+	width: 100%;
+}
+
+.slaider-nav .slick-item {
+   cursor: pointer;
+}
+
+.slaider-nav .slick-item .img-holder img {
+	background: rgba(255, 255, 255, 0);
+}
 
 @media (max-width: 1020px) {
 	.product .section-left {
