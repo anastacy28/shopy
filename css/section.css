@@ -1,35 +1,3 @@
-.slick .slick-dotted.slick-slider {
-	margin-bottom: 0;
-}
-
-.slick .slick-dots {
-   top: 40%;
-   text-align: left;
-   left: 10%;
-} 
-
-.slick .slick-dots li {
-	display: block;
-	width: 11px;
-	height: 22px;
-	background: #fff;
-	margin: 15px 5px;
-}
-
-.slick .slick-dots li button:before {
-	content: "";
-}
-
-.slick .slick-dots li:active button:before,
-.slick .slick-dots li:hover button:before,
-.slick .slick-dots li:focus button:before,
-.slick .slick-dots li:visited button:before {
-    width: 11px;
-	height: 31px;
-	background: #ff7013;
-
-}
-
 .featured {
    -webkit-background-size: 100% ;
     background-size: 100%;
@@ -363,7 +331,40 @@ input[type="checkbox"]:checked + label:before {
 
 .product .column-section {
 	padding-top: 7.5%;
-}     
+}   
+
+/*slick*/
+.slick .slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+.slick .slick-dots {
+   top: 40%;
+   text-align: left;
+   left: 4%;
+} 
+
+.slick .slick-dots li {
+	display: block;
+	width: 11px;
+	height: 22px;
+	background: #fff;
+	margin: 15px 5px;
+}
+
+.slick .slick-dots li button:before {
+	content: "";
+}
+
+.slick .slick-dots li:active button:before,
+.slick .slick-dots li:hover button:before,
+.slick .slick-dots li:focus button:before,
+.slick .slick-dots li:visited button:before {
+    width: 11px;
+	height: 31px;
+	background: #ff7013;
+
+}  
 
 /*show-product*/
 .show-slider {
